@@ -3,9 +3,9 @@ package com.example.greenswuni
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 
-class SplashScreen : AppCompatActivity() {
+class ChallengeCategoryActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_splash_screen)
+        setContentView(R.layout.activity_challenge_category)
     }
 }
