@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- 뒤로 가기 버튼 -->
+        <ImageButton
+            android:id="@+id/back_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginTop="16dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/arrow_back" />
+
+        <!-- 회원가입 제목 -->
+        <TextView
+            android:id="@+id/join"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="23dp"
+            android:fontFamily="@font/nanum_gothic_extrabold"
+            android:text="회원가입"
+            android:layout_marginLeft="40dp"
+            android:textColor="#000000"
+            android:textSize="24sp" />
+
+        <!-- 아이디 입력 필드 -->
+        <EditText
+            android:id="@+id/id_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="40dp"
+            android:background="@drawable/rectangle"
+            android:hint="아이디"
+            android:inputType="text"
+            android:padding="12dp"
+            android:textColor="#000000" />
+        <TextView
+            android:id="@+id/id_error"
+            android:layout_marginStart="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/id_edit_text"
+            android:layout_marginTop="4dp"
+            android:text="ID는 6~16자의 영문과 숫자 조합이어야 합니다."
+            android:textColor="#FC6449"
+            android:visibility="gone" />
+
+        <!-- 비밀번호 입력 필드 -->
+        <EditText
+            android:id="@+id/password_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="40dp"
+            android:background="@drawable/rectangle"
+            android:hint="비밀번호"
+            android:inputType="textPassword"
+            android:padding="12dp"
+            android:textColor="#000000" />
+        <TextView
+            android:id="@+id/password_error"
+            android:layout_marginStart="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/password_edit_text"
+            android:layout_marginTop="4dp"
+            android:text="비밀번호는 특수기호와 숫자 조합의 최소 4자 이상이어야 합니다."
+            android:textColor="#FC6449"
+            android:visibility="gone" />
+
+        <!-- 비밀번호 재확인 입력 필드 -->
+        <EditText
+            android:id="@+id/password_edit_text2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="40dp"
+            android:background="@drawable/rectangle"
+            android:hint="비밀번호 재확인"
+            android:inputType="textPassword"
+            android:padding="12dp"
+            android:textColor="#000000" />
+        <TextView
+            android:id="@+id/password_mismatch_error"
+            android:layout_marginStart="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/password_edit_text2"
+            android:layout_marginTop="4dp"
+            android:text="비밀번호가 불일치합니다."
+            android:textColor="#FC6449"
+            android:visibility="gone" />
+
+        <!-- 이름 입력 필드 -->
+        <EditText
+            android:id="@+id/name_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="40dp"
+            android:background="@drawable/rectangle"
+            android:hint="이름"
+            android:inputType="textPersonName"
+            android:padding="12dp"
+            android:textColor="#000000" />
+
+        <!-- 이메일 입력 필드 -->
+        <EditText
+            android:id="@+id/mail_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="40dp"
+            android:background="@drawable/rectangle"
+            android:hint="이메일(ex:swuni@swu.ac.kr)"
+            android:inputType="textEmailAddress"
+            android:padding="12dp"
+            android:textColor="#000000" />
+        <TextView
+            android:id="@+id/email_error"
+            android:layout_marginStart="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/mail_edit_text"
+            android:layout_marginTop="4dp"
+            android:text="이메일 형식이 옳지 않습니다."
+            android:textColor="#FC6449"
+            android:visibility="gone" />
+
+        <!-- 전화번호 입력 필드 -->
+        <EditText
+            android:id="@+id/phone_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="40dp"
+            android:background="@drawable/rectangle"
+            android:hint="전화번호"
+            android:inputType="phone"
+            android:padding="12dp"
+            android:textColor="#000000" />
+
+        <!-- 이메일 인증 버튼 -->
+        <ImageButton
+            android:id="@+id/email_button"
+            android:layout_marginStart="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="28dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/email_button"
+            android:visibility="gone"/> <!-- 처음에는 보이지 않음 -->
+
+        <!-- 회원가입 버튼 -->
+        <ImageButton
+            android:id="@+id/join_button2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"
+            android:background="@drawable/join_button2"
+            android:inputType=""
+            android:padding="12dp"
+            android:textColor="#000000" />
+
+    </LinearLayout>
+
+    <!-- 이메일 인증 팝업 -->
+    <FrameLayout
+        android:id="@+id/email_popup"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        android:background="@android:color/transparent"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@android:color/white"
+            android:padding="16dp">
+
+            <ImageView
+                android:id="@+id/email_popup_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/email_pop_up"/>
+
+            <!-- 인증번호 입력 필드와 확인 버튼 추가 -->
+            <EditText
+                android:id="@+id/verification_code_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:hint="인증번호 입력"/>
+
+            <Button
+                android:id="@+id/verify_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="확인"/>
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <!-- 인증 성공/실패 팝업 -->
+    <FrameLayout
+        android:id="@+id/result_popup"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        android:background="@android:color/transparent"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@android:color/white"
+            android:padding="16dp">
+
+            <ImageView
+                android:id="@+id/result_popup_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+    </FrameLayout>
+
+</RelativeLayout>

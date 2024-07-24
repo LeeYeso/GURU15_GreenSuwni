@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "567010425154",
+    "project_id": "green-swuni",
+    "storage_bucket": "green-swuni.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:567010425154:android:06e75efa36c74ab7be30db",
+        "android_client_info": {
+          "package_name": "com.example.fi"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAXBZRs0Px3_3ccCj27EW181_MFERfA7_Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:567010425154:android:949fc697c7d0ef6abe30db",
+        "android_client_info": {
+          "package_name": "com.example.greenswuni"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAXBZRs0Px3_3ccCj27EW181_MFERfA7_Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

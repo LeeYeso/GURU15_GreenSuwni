@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
+
+    <TextView
+        android:id="@+id/welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:fontFamily="@font/nanum_gothic_extrabold"
+        android:text="환영합니다!"
+        android:textColor="#000000"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/welcome_coment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/nanum_gothic_extrabold"
+        android:text="서울여대 슈니들의 그린 여정,\n그린슈니와 함께 시작하세요."
+        android:textColor="#829D3F"
+        android:textSize="16sp" />
+
+    <View
+        android:layout_width="210dp"
+        android:layout_height="210dp"
+        android:background="#E6E6E6"
+        android:layout_marginTop="40dp" />
+
+    <ImageButton
+        android:id="@+id/start_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/start_button"
+        android:layout_marginTop="50dp"
+        android:background="@android:color/transparent" />
+</LinearLayout>
